@@ -1,0 +1,52 @@
+# Criar um diretório.
+mkdir /home/italo/projeto
+
+# Entrar no diretório.
+cd /home/italo/projeto/
+
+# Criar repositório.
+git init
+
+# Colocar email e usuário github.
+git config --global user.email "italocavalcantefortaleza@live.com"
+git config --global user.name "italocavalcante"
+
+############################ Caso de Uso 1 ################################
+
+# O comando abaixo informa local remoto para o qual os arquivos
+# do repositório local serão enviados.
+git remote add origin https://github.com/italocavalcante/SQL-Oracle.git
+
+# Suponha que você cria um determinado arquivo:
+touch select-lock.sql
+
+# Em seguida é necessário adicionar o arquivo:
+git add select-lock.sql
+
+# Caso existem muitos arquivos para serem adicionados
+# Use o comando abaixo:
+git add --all
+
+# Em seguida faça commit das alterações no arquivo
+# e coloque um comentário.
+git commit -m "Select para visualizar os locks no banco de dados."
+
+# Envie o arquivo alterado para o repositório.
+git push origin master
+
+########################## Fim do caso de Uso 1 ###########################
+
+########################## Caso de Uso2 ###################################
+
+# Receba alterações do repositório
+git pull origin master
+
+########################## Fim caso de uso 2 ##############################
+
+########################## Caso de uso 3 ##################################
+
+# Clonar um repositório qualquer.
+git clone git://github.com/schacon/grit.git
+
+# Clonar um repositório colocando nome diferente
+git clone git://github.com/schacon/grit.git novo-nome
