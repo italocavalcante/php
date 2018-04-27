@@ -6,7 +6,7 @@ $i = 0;
 
 $host="127.0.0.1";
 $user="root";
-$password="#Portus@Cale10";
+$password="";
 $database="mysql";
 
 	$link = mysqli_connect($host, $user, $password, $database);
